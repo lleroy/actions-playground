@@ -21,3 +21,6 @@ jobs:
 
       - name: Run hello.py
         run: python hello.py
+      
+      - name: check environment variables
+        run: env  
