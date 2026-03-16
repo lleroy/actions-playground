@@ -2,6 +2,8 @@ name: Run hello.py
 
 on:
   push:
+    paths:
+      - 'hello.py'  # Run only when this specific file changes
 
 permissions:
   contents: read
@@ -23,4 +25,4 @@ jobs:
         run: python hello.py
       
       - name: check environment variables
-        run: env  
+        run: env
